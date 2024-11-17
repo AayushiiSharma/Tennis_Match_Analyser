@@ -5,9 +5,13 @@ import tempfile
 import os
 import numpy as np
 import pathlib
+import platform
 
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+# Use the appropriate Path class based on the operating system
+if platform.system() == "Windows":
+    PathClass = pathlib.WindowsPath
+else:
+    PathClass = pathlib.PosixPath
 
 
 # Paths
