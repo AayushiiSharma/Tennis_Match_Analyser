@@ -24,7 +24,7 @@ player_model = torch.hub.load(repo_path, 'custom', path=player_model_path, sourc
 ball_model = torch.hub.load(repo_path, 'custom', path=ball_model_path, source='local')
 
 # Streamlit app UI
-st.title('Tennis Detection App')
+st.title('Tennis Player and Ball Detector🎾')
 st.write('Upload a tennis video to detect players and balls in real-time.')
 
 # File uploader for video input
